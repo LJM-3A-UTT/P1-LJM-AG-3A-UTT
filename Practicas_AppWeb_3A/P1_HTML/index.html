@@ -1,0 +1,145 @@
+<!--Pagina simple-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>index-P1-HTML-AppWeb</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<div>
+  <div style="width: 300px;
+  flex-direction: column;
+  margin:30px;
+  display:none;">
+    <div>
+      <h1>TITULO</h1>
+      <h2>TEXTO</h2>
+      <img src="grunt.png" alt="abstracto">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae, quos blanditiis velit non reprehenderit
+        ipsam
+        magni repudiandae voluptate tenetur perferendis maiores quo cum, totam, quis ratione ipsa mollitia nulla.</P>
+    </div>
+    <!--Div e Input-->
+    <div>
+      <input type="text">
+      <br>
+      <!--tag para input ripo number y date que permite implementar un rango entre una cantidad menor y una mayor o viseversa-->
+      <input type="number" max="10" min="0">
+      <br>
+      <input type="date" min="2023-01-01" max="2023-05-24">
+      <br>
+      <input type="time">
+      <br>
+      <input type="checkbox">
+      <br>
+      <!--tag solo para input tipo file que permite limitar el tipo de documento que se puede subir-->
+      <input type="file" accept="image/*">
+      <br>
+      <input type="password">
+      <br>
+      <input type="file" accept=".pdf,.xlsx/*">
+      <br>
+      <input type="button" value="Login">
+    </div>
+    <!--Login Code-->
+    <div class="container">
+      <form action="">
+        <div class="column-direction">
+          <label for="">Usuario</label>
+          <br>
+          <input class="bold" placeholder="ejemplo@ejemplo.com" type="text" id="username">
+        </div>
+        <br>
+        <div class="column-direction">
+          <label for="">Password</label>
+          <br>
+          <input placeholder="ejemplo: 12345678" type="password" name="" id="password">
+        </div>
+        <br>
+        <button id="login" type="sumit">Login</button>
+      </form>
+    </div>
+  </div>
+  <!--flexbox-->
+  <div class="flexbox" style="display: none;">
+    <div class="item"  style="order: 1;">
+      <center>
+        <p>Caja 1</p>
+      </center>
+    </div>
+    <div class="item" style="order: 3;">
+      <center>
+        <p>Caja 2</p>
+      </center>
+    </div>
+    <div class="item" style="order: 0;">
+      <center>
+        <p>Caja 3</p>
+      </center>
+    </div>
+    <div class="item" style="order: 5;">
+      <center>
+        <p>Caja 4</p>
+      </center>
+    </div>
+    <div class="item" style="order: 4;">
+      <center>
+        <p>Caja 5</p>
+      </center>
+    </div>
+</div>
+<!--grid-->
+<div class="grid" style="display: none;">
+  <div class="border-item">
+    <p>Espacio 1</p>
+  </div>
+  <div class="border-item">
+    <p>Espacio 2</p>
+  </div>
+  <div class="border-item">
+    <p>Espacio 3</p>
+  </div>
+  <div class="border-item">
+    <p>Espacio 4</p>
+  </div>
+  <div class="border-item">
+    <p>Espacio 5</p>
+  </div>
+  <div class="border-item">
+    <p>Espacio 6</p>
+  </div>
+  <div class="border-item">
+    <p>Espacio 7</p>
+  </div>
+</div>
+<div>
+  <table border="" cellpadding="10" >
+    <caption align="bottom">Informacion del 2012</caption>
+    <thead style="background-color: blueviolet; color:aqua";>
+      <tr align="center">
+        <td align="start" style="width: 100px;">Nombre</td>
+        <td style="width: 100px;">Apellido Paterno</td>
+        <td style="width: 100px;">Apellido Materno</td>
+        <td align="end" style="width: 100px;">Edad</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr align="center">
+        <td align="start">Juanito</td>
+        <td>Perez</td>
+        <td>Barragan</td>
+        <td align="end">27</td>
+      </tr>
+      <tr align="center">
+        <td align="start">Pepe</td>
+        <td>Pica</td>
+        <td>Patas</td>
+        <td align="end">19</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
